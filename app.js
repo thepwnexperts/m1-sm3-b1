@@ -16,7 +16,7 @@ const verifypath=require('./routes/verify');
 
 //routes
 //local
-app.use("/verify",verifypath);
+app.use("/otp",verifypath);
 
 //remote
 
@@ -32,7 +32,7 @@ catch(e)
 };
 
 //server 
-var port = 3000;
+var port = 3003;
 app.listen(port, () => {
     console.log("server listening on port:" + port);
 });

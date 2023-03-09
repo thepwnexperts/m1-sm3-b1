@@ -76,7 +76,7 @@ transporter.sendMail(mailOptions, async function(error, info){
     
 });
 
-router.post('/otp',async (req,res)=> {
+router.post('/verify',async (req,res)=> {
     const to=req.body.from;
     const otp=req.body.otp;
    const mails =  await verify.findOne({mail: to});
